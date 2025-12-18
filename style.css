@@ -1,0 +1,40 @@
+
+body{background-color: mintcream;
+}
+/*styling h1*/
+h1{font-size: 48px;
+  font-family: consolas,san serif;
+  font-weight: bold;
+  text-transform: upppercase;
+  background-color: greenyellow;
+text-decoration: none;  
+  border-style: solid;
+  width: 600px;
+  border-color: cyan;
+  border-width: 5PX;
+  border-radius: 60px;
+  
+  padding: 20px;
+  }
+/*styling h2*/
+h2{font-size: 25px;
+  font-family: Monsterrat,san serif;
+  
+}
+/*styling h3*/
+  h3{font-size: 20px;
+  font-family: san serif;
+  color:  olive;
+  
+  }
+/*styling p*/
+p{font-size: 16px;
+  font-family: monospace;
+  color: darkblue;
+  }
+/*styling button*/
+button{font-size: 20px;
+  background-color: lightblue;
+
+
+
