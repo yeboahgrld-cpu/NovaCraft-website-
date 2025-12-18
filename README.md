@@ -1,4 +1,8 @@
-
+### 4. Scrumple (NEW!)
+- Educational coding platform
+- Helps students learn programming
+- Free, flexible, interactive
+- Vision: Make coding accessible to all
 # NovaCraft Website
 
 My first multi-page website built while learning web development in SHS.
