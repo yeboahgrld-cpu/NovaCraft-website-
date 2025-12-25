@@ -2,241 +2,79 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 body{
-  background-color: floralwhite;
-  font-size: 16px;
-  font-family: Sans-Serif;
-   line-height: 1.6em;
-}
-.header-style{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  background-color: coral;
-}
-.header-style h1{
-   font-size: 25px;
-  font-family: Georgia;
-  font-weight: normal;
-}
-.st{
-  list-style-type: none;
-  background-color: #979797;
-   
-  
-}
-.st li{
   font-size: 20px;
-  display: inline-block;
-  padding: 1rem;
-  padding-left: 0.5rem;
+  font-family: Arial;
 }
-.st a{
-  text-decoration: none;
+section .logo{
+  padding: 10px;
+  background-color: #2c3e50;
+}
+.logo span{
+  color: gold;
+}
+.logo h1{
   color: white;
 }
-.st a:visited{
-  color: red;
+.navbar{
+  background-color: #505150;
+  display: flex;
+  padding: 13px;
 }
-.st a:hover,a:focus{
+.navbar ul{
+  list-style-type: none;
+}
+.navbar li{
+  display: inline-block;
+}
+.navbar a{
+  color: white; 
+  text-decoration: none;
+   padding: 12px;
+}
+.navbar a:hover , a:focus{
   opacity: 0.8;
-  color: lightblue;
-  text-decoration:underline ;
+  color: dodgerblue;
 }
-.st a:active{
-  color: purple;
-}
-.container{
-  background-color: lightblue;
-  text-align: center;
-  padding-top: 2rem;
-  height: 230px;
-  width: 100%;
- 
-}
-.container h3{
-     font-family: Georgia;
-     font-size: 30px;
-     color:#334155;
-      padding-bottom: 2rem;
-}
-.container .ideas{
-     font-family: Georgia;
-     font-size: 30px;
-     color:green;
- padding-bottom: 0.5rem;   
-  text-align: center;
-}
-.container .btn{
-     font-family: Consolas;
-     margin-top: 1.5rem;
-     border: 2px double  #70A7A0;
-     font-size: 20px;
-     padding: 0.5rem;
-     background-color: #DDFFF8;
-     color: black;
-     outline: 2px solid purple;
-     outline-offset: -4px;
-          border-radius: 10px;
-}
-.btn:hover{
-     background-color: #FAFAFA;
+main .hero{
+    /* Background settings from previous step */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Give it height so there is space to center */
 
+    /* Centering logic */
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;       
+    color: white;             
 }
-main{
-     background-color: green;
+.hero h2{
+  letter-spacing: 4px;
 }
-main .edit{
-     text-align: center;
-     border: 2px outset black;
-     border-radius: 10px;
-     margin-top:3rem;
-     margin-left: 3%;
-     padding-top: 0.5rem;
-      padding-top: 0.5rem;
-     width: 45%;
-     height: 450px;
-     float: left;
-     background-color: #fafafa;
-}
-.edit ul{
-       list-style-type : default;
-     
-}
-.edit li::marker{
-     color: #5A5A5A;
-     font-size: 25px;
-
-}
-.edit li{
-     font-size: 20px;
-     color: #5a5a5a;
-}
-.edit button{
-     font-size: 17px;
-     margin-top: 3.5%;
-     margin-bottom: 2.5%;
-     padding: 0.25rem;
-     color: white;
-     background-color: dodgerblue;
-     border-radius: 10px;
-}
-.edit button:hover, button:focus{
-     opacity: 0.8;
-     background-color: blue;
-
-     
-}
-
-.edit h2{
-     color: black;
-     text-transform: capitalize;
-     padding: 3%;
-}
-.edit ul{
-     display: inline-block;
-     
-}
-
-}
-.edit h2{
-     padding-top: 1.5rem;
-     color: black;
-     font-size: 25px;
-     padding-bottom: 1.5rem;
-     
-}
-.edit h3{.
-     color: #1A1A1A;
-     font-size: 20px;
-
-}
-
-.second{
-     text-align: center;
-     border: 2px outset black;
-     margin-top: 3rem;
-     border-radius: 10px;
-     margin-left:1.5rem;
-     margin-right: 1.5rem;
-     padding-top: 0.5rem;
-     height: 450px;
-     width: 46.0%;
-     display: inline-block;
-     float: left;
-     background-color: #fafafa;
-}
-.second h2{
-     
-     font-size: 25px;
-     color: black;
-     padding:3%;
-}
-.second h3{
-     color: black;
-     margin: 0.5rem;
-}
-.second button{
-    font-size: 17px;
-     margin-top: 0.25%;
-     margin-bottom: 2.5%;
-     padding: 0.25rem;
-     color: white;
-     background-color: dodgerblue;
-     border-radius: 10px;
-     
-}
-.second button:hover, button:focus{
-     opacity: 0.8;
-     background-color: blue;
-}
-.second p{
-    color: #5A5A5A; 
-    font-size:18px;
-}
-.pen{
-   font-size:25px ;
-   margin-top: 35.8rem;
-   margin-bottom: 1.5rem;
-   margin-left: 1.5rem;
+.hero .btn{
+    
+    display: inline-block;
+    margin-top: 40px;      
+    
   
+    background: transparent;
+    border: 1px solid #d4af37; 
+    color: #d4af37;           
+    padding: 12px 45px;        
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;          
 }
-.boxo{
-     height: 5%;
-     width: 60%;
- text-align: 1.4px;
- margin-left: 1.5rem;
- font-size: 16px;
- border-radius: 5px;
- margin-top: 1.25rem;
+
+.btn:hover {
+    background: #d4af37;       
+    color: black;             
 }
-textarea{
-     height: 15%;
-     width: 60%;
-     margin-left: 1.5rem;
-     font-size: 16px;
-     font-family: none;
-     border-radius: 5px;
-     margin-top: 1.25rem;
-     }
-.trace{    font-size: 17px;
-     margin-top: 3.25%;
-     margin-bottom: 2.5%;
-     padding: 0.25rem;
-     color: white;
-     background-color: dodgerblue;
-     border-radius: 10px;
-     margin-left: 2.5%;
-     
-}
-.trace:hover, button:focus{
-     opacity: 0.8;
-     background-color: blue;
-}
-.haha{
-     background-color: #6A6588;
-     height: 5%;
-     color: white;
+
 }
