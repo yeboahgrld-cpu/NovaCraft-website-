@@ -29,3 +29,68 @@ This is the beginning of my coding journey. My goal is to become a Software Arch
 ## Connect With Me
 - GitHub: @yeboahgrld-cpu
 - Location: Ghana 🇬🇭
+y
+
+Modern landing page for a smart home automation platform.
+
+## Features
+
+- Responsive design for all devices
+- Clean UI with orange accent colors
+- Hero section with call-to-action
+- Mobile-optimized layout
+
+## Technologies
+
+- HTML5
+- CSS3
+- Responsive Design
+
+## Live Demo
+
+🔗 [View Live](#) *(Add your URL)*
+# Quantum Nexus - Cloud Computing
+
+Futuristic landing page for a next-gen cloud computing platform.
+
+## Features
+
+- Cyberpunk aesthetic
+- Cyan and pink gradient colors
+- Responsive design
+- Bold, modern UI
+
+## Technologies
+
+- HTML5
+- CSS3
+- Gradient Effects
+
+## Live Demo
+
+🔗 [View Live](#) *(Add your URL)*
+
+## Screenshot
+
+## 3️⃣ **Aura Muse - SHORT README.md**
+
+
+# Aura Muse - Luxury Fashion
+
+Elegant landing page for a luxury fashion brand.
+
+## Features
+
+- Sophisticated design with copper accents
+- Seasonal collection showcase
+- Responsive layout
+- Premium aesthetic
+
+## Technologies
+
+- HTML5
+- CSS3
+- Modern UI/UX
+
+## Live Demo
+
