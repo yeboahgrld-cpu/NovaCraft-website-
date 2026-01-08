@@ -220,7 +220,7 @@ header a:hover, a:focus{
 }
 footer {
     background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
-    /* Dark purple gradient to match your theme */
+    
     color: #e0e0e0;
     padding: 60px 50px 0;
 }
@@ -248,7 +248,7 @@ footer {
 }
 
 .footer-col h3 span {
-    color: #00d4ff; /* Cyan to match your "Studio" */
+    color: #00d4ff; 
 }
 
 .footer-col h4 {
@@ -275,16 +275,16 @@ footer {
 }
 
 .footer-col a i {
-    margin-right: 10px; /* Space between icon and text */
-    font-size: 20px; /* Make icons bigger */
-    color: #00d4ff; /* Cyan color */
+    margin-right: 10px; 
+    font-size: 20px; 
+    color: #00d4ff; 
     transition: all 0.3s ease;
 }
 
 /* Icon hover effect */
 .footer-col a:hover i {
-    transform: scale(1.2); /* Grows on hover */
-    color: #00f5ff; /* Brighter cyan */
+    transform: scale(1.2); 
+    color: #00f5ff; 
 }
 .footer-col a:hover {
     color: #00d4ff;
@@ -305,9 +305,7 @@ footer {
     color: #999;
 }
 
-/* ========================================
-   RESPONSIVE FOOTER (Mobile)
-   ======================================== */
+
 
 @media (max-width: 768px) {
     footer {
