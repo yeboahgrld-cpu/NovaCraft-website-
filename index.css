@@ -1,89 +1,330 @@
 *{
-  padding: 0;
   margin: 0;
-   box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  font-size: 20px;
-  font-family: Consolas;
+body header{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: Georgia;
+  line-height: 1.6;
 }
 header{
-     color: #1a1a1a;
-     background-color: transparent;
-     padding: 10px;
-     align-items: center;
-     display: flex;
-     justify-content: space-between;
-     text-align: center;
-     position: absolute;
-     width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  transition: 0.3 ease;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 15px 30px;
+  color: #000;
+  
 }
 header span{
-     color: cyan;
+  color: cyan;
 }
-header h1{
-   color: cyan;
- }
-.links nav ul{
-     list-style-type: none;
-     
+header ul{
+  display: flex;
+  gap: 40px;
+  list-style: none;
 }
-.links nav li{
-     display: inline;
+header a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
 }
-.links nav a{
-  color: white;
-     font-weight: bold;
-     text-decoration: none;
-     padding-left: 10px;
-     text-transform: capitalize;
-     transition: 300ms;
+header a:hover, a:focus{
+  color: cyan;
 }
-.links nav a:hover, a:focus{
-     color: dodgerblue;
-     letter-spacing: 4px;
-     
-}
-main .hero{
-         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                      url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=1920&q=80');
   
-  
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Give it height so there is space to center */
-
-    /* Centering logic */
-    display: flex;
-    flex-direction: column;   
-    justify-content: center;  
-    align-items: center;      
-    text-align: center;       
-    color: white;             
-}
-}
-.hero h2{
-  letter-spacing: 4px;
-  text-transform: capitalize;
-}
-.hero .btn{
-    
-    display: inline-block;
-    margin-top: 40px;      
-    
-  
-    background: transparent;
-    border: 1px solid teal; 
-    color: #b0c4de;           
-    padding: 12px 45px;        
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.5s;          
+.hero {background: linear-gradient(135deg, lightblue ,dodgerblue);
+       
+  /**
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920');
+                      **/
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                      text-align: center;
+                      height: 60vh;
+                      color: #1a1a1a;
+                      padding: 0 20px;
+                      line-height: 1.6;
+                      
+                      background-position: center;
+                      background-size: cover;
+                      
 }
 
-.btn:hover {  
-    background:  cyan;    
-    color: teal;             
+.hero h1{
+   font-size: 2.8rem; 
+    margin-bottom: 15px; 
+    line-height: 1.2; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: 72px;
+    background: linear-gradient(90deg, #ff006e, #8b5cf6, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px; 
+    word-spacing: 4px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 30px; 
+    max-width: 650px; 
+    line-height: 1.8; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      text-transform: capitalize;
+      color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.btn{
+  display: inline-block;
+  margin: 20px;
+  padding:15px 35px ;
+  text-transform: uppercase;
+  font-weight: bold;
+   border: 2px solid dodgerblue;
     border-radius: 10px;
+  background-color: dodgerblue;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+    background: #2563eb; /* Slightly darker blue */
+}
+.features {
+  padding: 80px 20px;
+   background: linear-gradient(135deg, #667eea, #764ba2);
+}
+.features-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+.feature-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+@media (max-width: 768px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+}
+.feature-card:hover{
+      transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(0, 212, 255, 0.5);
+}
+.stats{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 50px;
+    background: linear-gradient(135deg, dodgerblue);
+  gap: 40px;
+}
+ .stat-card{
+   text-align: center;o
+   flex: 1;
+ }
+ 
+.stat-number{
+   font-size: 48px;
+   font-weight: bold;
+   color: #f4f4f4;
+   margin-bottom: 10px;
+ }
+ .stat-label{
+   font-size: 18px;
+   color: #e0e0e0;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+ }
+.cta {
+  background: linear-gradient(135deg, lightblue ,dodgerblue);
+       
+  /**
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920');
+                      **/
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                      text-align: center;
+                      height: 30vh;
+                      color: #1a1a1a;
+                      padding: 0 20px;
+                      line-height: 1.6;
+                      
+                      background-position: center;
+                      background-size: cover;
+                      
+}
+.cta h1{
+   font-size: 2.8rem; 
+    margin: 15px; 
+    line-height: 1.2; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+}
+.cta h2 {
+    font-size: 1.8rem;
+    margin-top: 35px; 
+    word-spacing: 4px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+}
+
+.cta p {
+    font-size: 1rem;
+    margin-bottom: 30px; 
+    max-width: 650px; 
+    line-height: 1.8; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      text-transform: capitalize;
+}
+.btn:hover{
+   transform: translateY(-5px);
+}
+footer {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    /* Dark purple gradient to match your theme */
+    color: #e0e0e0;
+    padding: 60px 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    /* Purple border */
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-col h3 span {
+    color: #00d4ff; /* Cyan to match your "Studio" */
+}
+
+.footer-col h4 {
+    color: #00d4ff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-col p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.footer-col a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.footer-col a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 20px; /* Make icons bigger */
+    color: #00d4ff; /* Cyan color */
+    transition: all 0.3s ease;
+}
+
+/* Icon hover effect */
+.footer-col a:hover i {
+    transform: scale(1.2); /* Grows on hover */
+    color: #00f5ff; /* Brighter cyan */
+}
+.footer-col a:hover {
+    color: #00d4ff;
+    padding-left: 5px;
+    transform: translateX(5px);
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #999;
+}
+
+/* ========================================
+   RESPONSIVE FOOTER (Mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 20px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-col a:hover {
+        padding-left: 0;
+        transform: translateX(0);
+    }
 }
